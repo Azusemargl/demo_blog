@@ -1,5 +1,3 @@
-"use strict";
-
 const { src, dest, watch, series, parallel } = require('gulp');
 const browserSync   = require('browser-sync');
 const panini        = require('panini');
