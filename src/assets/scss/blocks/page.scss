@@ -1,0 +1,30 @@
+.page {
+  overflow: hidden;
+
+  @include breakpoint($tablet-bp) {
+    .show-sidebar & {
+      position: relative;
+
+      &:after {
+        display: block;
+        content: '';
+        width: 100%;
+        height: 100%;
+
+        background-color: rgba($black, .8);
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+      }
+    }
+  }
+}
+
+.title {
+  margin-bottom: 3rem;
+
+  color: $white;
+  font-size: 2.1rem;
+}

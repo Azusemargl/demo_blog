@@ -1,0 +1,23 @@
+/* Main SCSS Configuration */
+$body: #181818;
+$primary: #202020;
+$secondary: #121212;
+$afterGray: #0D0D0D;
+$grayText: #D2D2D2;
+
+$white: #fff;
+$black: #000;
+$gray: #DEDEDE;
+$red: #ED3024;
+$blue: #3137C9;
+
+/* Z-Index SCSS Configuration */
+$z-index-sidebar: 1000;
+$z-index-header: 1000;
+
+/* Width */
+$sidebar-width: 300px;
+
+/* Mixins */
+$tablet-bp: 991px;
+$mobile-bp: 700px;

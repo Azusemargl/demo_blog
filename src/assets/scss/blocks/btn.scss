@@ -1,0 +1,44 @@
+@mixin btn-background-color($property) {
+  background-color: $property;
+  box-shadow: 0 7px 17px rgba($property, .2);
+
+  &:hover {
+    background-color: darken($property, 5%);
+  }
+}
+
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 1.1em 2.1em;
+
+  background-color: $secondary;
+  border: none;
+  cursor: pointer;
+  border-radius: 3em;
+
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.1;
+  color: $white;
+  text-decoration: none;
+
+  transition: background-color .2s linear;
+
+  &--red {
+    @include btn-background-color($red);
+  }
+
+  &--blue {
+    @include btn-background-color($blue);
+  }
+
+  &--rounded {
+    border-radius: 5px;
+  }
+
+  &--sm {
+    padding: 0.7em 1.25em;
+  }
+}
